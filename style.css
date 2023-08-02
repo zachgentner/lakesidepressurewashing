@@ -4,8 +4,9 @@
 :root {
     --primary: #a2ff7e;
     --secondary: #63bbd6;
-    --dark: #343633;
     --light: #ffffff;
+    --neutral: #f3f3f3;
+    --dark: #343633;
     --attention: #ec7357;
 }
 
@@ -123,17 +124,41 @@ img {
 /* LOCATIONS */
 .locations {
     width: 100%;
-    background-color: var(--dark);
+    background-color: var(--neutral);
+}
+
+.heading {
+  display: flex;
+  margin: 20px auto;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  margin-left: 20px;
+}
+
+.locations .list {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: 40px;
+}
+
+.locations .county {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60px auto;
+}
+
+.locations ul {
+  grid-column: span 2;
+}
+
+.county h1 {
+  grid-column: span 2;
 }
 
 
 /* SERVICES */
-.services h1 {
-    margin: 20px -40px 0 -40px;
-    padding: 20px 20px;
-    background-color: var(--secondary);
-    color: white;
-}
 
 .services .grid {
     grid-template-columns: repeat(3, 1fr);
