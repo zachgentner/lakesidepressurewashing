@@ -210,6 +210,7 @@ img {
 .contact .card {
   max-width: 600px;
   margin: auto;
+  align-items: right;
 }
 
 .contact i {
