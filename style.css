@@ -17,6 +17,10 @@
     scroll-behavior: smooth;
 }
 
+body, html {
+  scroll-padding-top: 100px;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: #333;
@@ -183,6 +187,24 @@ img {
 footer {
   background-color: var(--dark);
   height: 200px;
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+
+footer a {
+  color: white;
+}
+
+footer .attribution {
+  background-color: var(--dark);
+  padding: 20px;
 }
 
 /* MEDIA QUERIES */
