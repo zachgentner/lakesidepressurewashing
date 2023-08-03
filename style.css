@@ -77,13 +77,15 @@ img {
     font-weight: 500;
 }
 
-.header a {
+.header li {
     margin: 0 20px;
-    color: white;
     font-size: 20px;
-}
+  }
+  .header a {
+    color: white;
+  }
 
-.header a:hover {
+.header li:hover {
     border-bottom: 1px solid white;
     line-height: 20px;
 }
@@ -129,6 +131,7 @@ img {
 .locations {
     width: 100%;
     background-color: var(--neutral);
+    padding-bottom: 20px;;
 }
 
 .heading {
@@ -143,7 +146,7 @@ img {
 .locations .list {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .locations .county {
@@ -160,27 +163,61 @@ img {
   grid-column: span 2;
 }
 
-/* ABOUT */
-.about {
-  background-color: var(--neutral);
-}
-
 
 /* SERVICES */
 
 .services {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .services .grid {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* GALLERY */
+.gallery {
+  background-color: var(--neutral);
+  padding-bottom: 20px;
+}
+
+.gallery img {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--dark);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .photos {
+  flex-wrap: wrap;
+}
+
+/* ABOUT */
+.about {
+  padding-bottom: 20px;
+}
 
 /* CONTACT */
 .contact {
   background-color: var(--neutral);
+  padding-bottom: 20px;
+}
+
+.contact .container {
+  flex-direction: column;
+}
+
+.contact .card {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact i {
+  margin: 10px;
+}
+
+.fb i {
+  color: #4267B2;
 }
 
 /* FOOTER */
@@ -198,8 +235,16 @@ footer .container {
   height: auto;
 }
 
+footer ul {
+  padding: 0;
+}
+
 footer a {
   color: white;
+}
+
+.footer-logo {
+  height: 150px;
 }
 
 footer .attribution {
