@@ -128,14 +128,12 @@ img {
 }
 
 .heading {
-  display: flex;
   margin: 20px auto;
-  width: 500px;
-  justify-content: space-between;
 }
 
 .heading h1 {
   margin-left: 20px;
+  font-weight: bold;
 }
 
 .locations .list {
@@ -151,21 +149,41 @@ img {
 
 .locations ul {
   grid-column: span 2;
+  padding: 0;
 }
 
 .county h1 {
   grid-column: span 2;
 }
 
+/* ABOUT */
+.about {
+  background-color: var(--neutral);
+}
+
 
 /* SERVICES */
+
+.services {
+  margin-bottom: 20px;
+}
 
 .services .grid {
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* GALLERY */
 
+/* CONTACT */
+.contact {
+  background-color: var(--neutral);
+}
 
+/* FOOTER */
+footer {
+  background-color: var(--dark);
+  height: 200px;
+}
 
 /* MEDIA QUERIES */
 
