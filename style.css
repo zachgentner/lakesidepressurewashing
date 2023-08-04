@@ -157,10 +157,17 @@ img {
 .locations ul {
   grid-column: span 2;
   padding: 0;
+  margin-top: -20px;
 }
 
 .county h1 {
   grid-column: span 2;
+}
+
+.list h1 {
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--neutral);
 }
 
 
@@ -178,6 +185,10 @@ img {
 .gallery {
   background-color: var(--neutral);
   padding-bottom: 20px;
+}
+
+.services .card{
+  align-self: flex-start;
 }
 
 .gallery img {
@@ -213,6 +224,12 @@ img {
   align-items: right;
 }
 
+.contact .btn {
+  margin-top: 20px;
+  font-size: larger;
+  line-height: 1.5;
+}
+
 .contact i {
   margin: 10px;
 }
@@ -224,7 +241,6 @@ img {
 /* FOOTER */
 footer {
   background-color: var(--dark);
-  height: 200px;
   color: white;
   padding: 20px 0;
 }
@@ -255,8 +271,6 @@ footer .attribution {
 
 /* MEDIA QUERIES */
 
-/* Tablets */
-
 @media (max-width: 1100px) {
     .header nav {
         display: none;
@@ -264,23 +278,108 @@ footer .attribution {
 
     .header .fa-bars {
         display: block;
-      }
+    }
+
+    .services .grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 900px) {
+  .banner .card {
+    margin-top: 0px;
   }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+/* Tablets */
+
+@media (max-width: 768px) {
+  /* body {
+    display: none
+  } */
   
-/* Mobile */
-  @media (max-width: 500px) {
-  .header {
-    height: 110px;
+  .services .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .banner .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-position: 0 -150px;
+    background-image: url(img/stock/pexels-caitlin-whealy-5652626.jpg);
+  }
+
+  .banner .card {
+    grid-row: 2;
+  }
+
+  footer .container {
+    justify-content: space-around;
+  }
+
+  .footer-areas {
+    display: none;
+  }
+}
+
+  
+ @media (max-width: 600px) {
+  .locations .list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .header .btn {
     display: none;
   }
+ }
+
+/* Mobile */
+  @media (max-width: 500px) {
+    body {
+      line-height: 1.2rem;
+    }
+
+  .header {
+    height: 110px;
   }
+
+  .banner .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(img/stock/power-washing-wooden-deck-1.jpg);
+    background-position: -200px;
+  }
+
+  .banner .card{
+    grid-row-start: 1;
+  }
+
+  .contact p {
+    display: none;
+  }
+
+  .contact i {
+    margin: 20px;
+  }
+
+  .contact .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .container{
+    display: none;
+  }
+}
   
 
 
