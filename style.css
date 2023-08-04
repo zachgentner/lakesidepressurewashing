@@ -104,6 +104,35 @@ img {
     display: none;
 }
 
+
+/* MENU */
+#menu {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 100px;
+  width: 100vw;
+  background-color: rgba(52, 54, 51, 0.8);
+}
+
+#menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 0;
+}
+
+#menu li {
+  font-size: x-large;
+  margin: 2rem;
+}
+
+#menu a {
+  color: var(--light);
+}
+
 /* BANNER */
 .banner .container{
     background-image: url(img/stock/stock1.jpg);
@@ -173,7 +202,6 @@ img {
 
 
 /* SERVICES */
-
 .services {
   padding-bottom: 20px;
 }
@@ -351,6 +379,19 @@ footer .attribution {
     height: 110px;
   }
 
+  #menu {
+    top: 110px;
+  }
+
+  #menu ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  #menu a {
+    font-size: larger;
+  }
+
   .banner .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -379,6 +420,10 @@ footer .attribution {
 
   footer .container{
     display: none;
+  }
+
+  .attribution {
+    font-size: larger;
   }
 }
   

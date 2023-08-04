@@ -25,9 +25,21 @@
             </nav>
         </div>
         <div class="btn" onclick="window.location.href='#contact'">GET A FREE QUOTE</div>
-        <i class="fas fa-bars fa-2x"></i>
+        <i class="fas fa-bars fa-2x" onclick="toggleMenu()"></i>
     </div>
 </header>
+
+<div id="menu">
+    <nav class="flex">
+        <ul>
+            <li><a href="#locations" onclick="toggleMenu()">Locations</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+</div>
 
 <!-- BANNER -->
 <section class="banner">
@@ -263,5 +275,6 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
