@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeside Pressure Washing</title>
+    <link rel="shortcut icon" href="img/logo/LPWTransparentpng.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="gulpfile.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container flex">
+        <div class="flex">
+            <div class="logo"><img src="img/logo/LPWTransparentpng.png" alt="Lakeside Pressure Washing Logo"></div>
+            <nav class="header-nav">
+                <ul class="flex">
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btn" onclick="window.location.href='#contact'">GET A FREE QUOTE</div>
+        <i class="fas fa-bars fa-2x" onclick="toggleMenu()"></i>
+    </div>
+</header>
+
+<div id="menu">
+    <nav class="flex">
+        <ul>
+            <li><a href="#locations" onclick="toggleMenu()">Locations</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- BANNER -->
+<section class="banner">
+    <div class="container grid">
+        <div class="card text-center">
+            <h1>First Time Customers Get 10% Off!</h1>
+            <p>Lakeside Pressure Washing LLC is Lenawee and Hillsdale county's preeminent residential and commercial pressure washing business.
+                Our team of skilled technicians and state-of-the-art equipment allow us to deliver exceptional results in cleaning driveways, sidewalks, decks, siding, and more.
+                Our commitment to customer satisfaction, attention to detail, and eco-friendly cleaning solutions sets us apart as the go-to choice for revitalizing outdoor surfaces.
+            </p>
+            <div class="btn"><a href="#contact">CONTACT US</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATIONS -->
+<div id="locations"></div>
+<section class="locations">
+    <div class="container text-center">
+        <div class="heading flex">
+            <i class="fa-regular fa-map fa-3x"></i>
+            <h1 class="md">Locations</h1>
+        </div>
+        <div class="list grid">
+            <div class="county grid card">
+                <h1>Lenawee County</h1>
+                <ul class="grid">
+                    <li>Adrian</li>
+                    <li>Tecumseh</li>
+                    <li>Hudson</li>
+                    <li>Morenci</li>
+                    <li>Addison</li>
+                    <li>Blissfield</li>
+                    <li>Britton</li>
+                    <li>Cement City</li>
+                    <li>Clayton</li>
+                    <li>Clinton</li>
+                    <li>Deerfield</li>
+                    <li>Onsted</li>
+                    <li>Devils Lake</li>
+                    <li>Manitou Beach</li>
+                </ul>
+            </div>
+                <div class="county grid card">
+                    <h1>Hillsdale County</h1>
+                    <ul class="grid">
+                        <li>Hillsdale</li>
+                        <li>Jonesville</li>
+                        <li>Litchfield</li>
+                        <li>Reading</li>
+                        <li>Allen</li>
+                        <li>Camden</li>
+                        <li>Montgomery</li>
+                        <li>North Adams</li>
+                        <li>Waldron</li>
+                        <li>Somerset</li>
+                        <li>Moscow</li>
+                        <li>Pittsford</li>
+                        <li>Woodbridge</li>
+                        <li>Cambria</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <div class="container text-center">
+        <div class="heading flex">
+            <i class="fa-solid fa-water fa-3x"></i>
+            <h1 class="md">Services</h1>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="img/stock/sidewalk.jpg" alt="Pressure Washing Brick Sidewalk">
+                <h3>Sidewalks & Driveways</h3>
+                <p>Concrete, ashphalt, cement bricks, and other hard surfaces. We also handle parking lots!</p>
+            </div>
+            
+            <div class="card">
+                <img src="img/stock/porch.jpg" alt="Pressure washing wooden porch.">
+                <h3>Porches & Decks</h3>
+                <p>Inevitably, weather takes it toll on outdoor surfaces. Let us help restore your porch or deck!</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/patio.jpg" alt="Luxurious patio scenic view">
+                <h3>Patios & Pools</h3>
+                <p>Patios, pools, and other outdoor recreation spaces are much more inviting with a wash!</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/dock.jpg" alt="Two men on a dock">
+                <h3>Docks & Fences</h3>
+                <p>Docks, fences, and other outdoor structures are one of our many specialities.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/gutter.jpg" alt="Gutters on a residential home">
+                <h3>Gutters & Downspouts</h3>
+                <p>We make cleaning leaves and debris from your gutters in spring and fall a breeze!</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/house.jpg" alt="A large country home">
+                <h3>Houses & Buildings</h3>
+                <p>Siding, roofs, windows, and more. Residential, commercial, or both!</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/vehicle.jpg" alt="A man pressure washing a car">
+                <h3>Automotive</h3>
+                <p>Vehicles, cars, trucks, or entire fleets! Our soft wash equipment can handle the job.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/camper.jpg" alt="A recreational vehicle driving">
+                <h3>Recreational Vehicles</h3>
+                <p>RVs, SUVs, ATVs, ORVs, campers, mobile homes and more. Look your best this season!</p>
+            </div>
+
+            <div class="card">
+                <img src="img/stock/boat.jpg" alt="An top down view of a dock with many boats">
+                <h3>Watercraft & Boats</h3>
+                <p>Pontoons, speedboats, fishing boats and more! Have a yacht? We've got you covered.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+    <div class="container text-center">
+        <div class="heading flex">
+            <i class="fa-regular fa-image fa-3x"></i>
+            <h1 class="md">Gallery</h1>
+        </div>
+        <div class="photos flex">
+            <img src="img/lpw/trailer.jpg" alt="A branded trailer with pressure washing equipment">
+            <img src="img/lpw/243519849_264621532105837_6467750506774961690_n.jpg" alt="A driveway that has been halfway pressure washed">
+            <img src="img/lpw/243448875_264629652105025_8831032230278731772_n.jpg" alt="A pristine backyard patio">
+            <img src="img/lpw/243314938_264627478771909_4604973370145232452_n.jpg" alt="A curb being pressure washed">
+            <img src="img/lpw/houseafter.jpg" alt="A freshly pressure washed blue residence">
+            <img src="img/lpw/sidingbefore.jpg" alt="Dingy yellow house siding">
+            <img src="img/lpw/sidingafter.jpeg" alt="Pristine yellow house siding">
+            <img src="img/lpw/sidingbefore2.jpg" alt="Dingy yellow house siding">
+            <img src="img/lpw/sidingafter2.jpeg" alt="Pristine yellow house siding">
+        </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="container text-center">
+        <div class="heading flex">
+            <i class="fa-regular fa-circle-user fa-3x"></i>
+            <h1 class="md">About</h1>
+        </div>
+        <p>Lakeside Pressure Washing is your premier residential and commercial pressure washing service serving Lenawee and Hillsdale counties. We specialize in restoring the beauty of houses and driveways, leaving them looking fresh and inviting. With years of expertise, our licensed and insured team utilizes cutting-edge equipment and eco-friendly cleaning agents to remove dirt, grime, mold, and stains, ensuring your property's exterior shines like new. Whether you need a complete house washing or a driveway cleanup, Lakeside Pressure Washing is dedicated to delivering personalized and top-quality service, exceeding your expectations with every project. Contact us today for a free quote and experience the transformative power of our professional pressure washing services.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="container text-center">
+        <div class="heading flex">
+            <i class="fa-regular fa-address-card fa-3x"></i>
+            <h1 class="md">Contact</h1>
+        </div>
+        <div class="card">
+            <div class="flex">
+                <a href="tel:7347908994" target="_blank">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                    <p>(734) 790-8994</p>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="mailto:lakesidepressurewashingmi@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <p>lakesidepressurewashingmi@gmail.com</p>
+                </a>
+            </div>
+            <div class="flex fb">
+                <a href="https://www.facebook.com/LakesidePressureWashing" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <p>Facebook</p>
+                </a>
+            </div>
+        </div>
+        <div class="btn" onclick="window.location.href='tel:7347908994'">GET A FREE QUOTE</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container flex">
+
+        <div class="footer-logo">
+            <img src="img/logo/LPWTransparentpng.png" alt="Lakeside Pressure Washing Logo">
+        </div>
+
+        <nav class="footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-areas">
+            <h3>Locations</h3>
+                <ul>
+                    <li>Lenawee County</li>
+                    <li>Hillsdale County</li>
+                </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="tel:7347908994" aria-label="Contact Lakeside Pressure Washing by phone" target="_blank"><i class="fa-solid fa-phone"></i> (734) 790-8994</a></li>
+                <li><a href="mailto:lakesidepressurewashingmi@gmail.com" aria-label="Contact Lakeside Pressure Washing by email" target="_blank"><i class="fa-regular fa-envelope"></i> lakesidepressurewashingmi@gmail.com</a></li>
+                <li><a href="https://www.facebook.com/LakesidePressureWashing" aria-label="View the Lakeside Pressure Washing Facebook Page" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="attribution text-center">
+        <a href="https://www.linkedin.com/in/zachgentner/" target="_blank">Website by Zach Gentner</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

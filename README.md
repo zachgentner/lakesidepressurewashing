@@ -1,1 +1,3 @@
 # lakesidepressurewashing
+
+A freelance project designed and developed for a local small business. Throughout this project I used industry standard design patterns and vanilla HTML, CSS, and Javascript to create a responsive landing page that acts as a sales funnel driving sales for their business. Site optimization allowed me to gain experience with Lighthouse, Node Package Manager (npm), Gulp.js, and linting tools.
