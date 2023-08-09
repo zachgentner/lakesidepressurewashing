@@ -6,9 +6,9 @@ gulp.task("default", async function(){
 });
 
 gulp.task('imageMin', () =>
-	gulp.src('src/img/*/*')
+	gulp.src('src/img/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('dist/img'))
+		.pipe(gulp.dest('img'))
 );
 
 gulp.task ("copyHTML", async function(){
