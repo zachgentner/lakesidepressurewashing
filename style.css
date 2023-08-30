@@ -135,7 +135,7 @@ img {
 
 /* BANNER */
 .banner .container{
-    background-image: url(img/stock1.jpg);
+    background-image: url(img/stock1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -341,7 +341,7 @@ footer .attribution {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     background-position: 0 -150px;
-    background-image: url(img/stock2.jpg);
+    background-image: url(img/stock2.webp);
   }
 
   .banner .card {
@@ -401,7 +401,7 @@ footer .attribution {
   .banner .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-image: url(img/stock3.jpg);
+    background-image: url(img/stock3.webp);
     background-position: -200px;
   }
 
